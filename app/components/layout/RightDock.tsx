@@ -14,6 +14,7 @@ export default function RightDock({
       className={`
         fixed z-50 bg-white shadow-xl
         transition-transform duration-300 ease-out
+        flex flex-col
 
         /* ================= Mobile ================= */
         inset-0
@@ -30,7 +31,7 @@ export default function RightDock({
       `}
     >
       {/* ================= Header ================= */}
-      <div className="h-14 px-4 flex items-center justify-between border-b">
+      <div className="h-14 px-4 flex items-center justify-between border-b shrink-0">
         <button
           onClick={onClose}
           className="text-sm text-gray-500 hover:text-black"
@@ -42,14 +43,14 @@ export default function RightDock({
       {/* ================= Scrollable Content ================= */}
       <div
         className="
-          h-[calc(100vh-56px)]
+          flex-1
           overflow-y-auto
           p-6
-          pb-24
+          pb-28
           lg:pb-6
         "
         style={{
-          paddingBottom: "calc(6rem + env(safe-area-inset-bottom))",
+          paddingBottom: "calc(7rem + env(safe-area-inset-bottom))",
         }}
       >
         {children}
