@@ -1,13 +1,24 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
   const { message } = await req.json();
-  console.log("📨 incoming message:", message);
+
+  const apiKey = process.env.RESEND_API_KEY;
+
+  if (!apiKey) {
+    console.error("❌ RESEND_API_KEY is missing");
+    return new Response(
+      JSON.stringify({ success: false }),
+      { status: 500 }
+    );
+  }
+
+  // ✅ 여기서 초기화 (런타임)
+  const resend = new Resend(apiKey);
+
   await resend.emails.send({
     from: "Portfolio <onboarding@resend.dev>",
-    to: ["wonjaeyeon0524@gmail.com"],
+    to: ["jaeyeonwon@gmail.com"],
     subject: "📩 New Portfolio Message",
     html: `
       <p>You received a new message:</p>
