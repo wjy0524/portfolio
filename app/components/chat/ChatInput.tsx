@@ -21,7 +21,7 @@ export default function ChatInput({ onSend, disabled }: Props) {
           placeholder={
             disabled
               ? "You can send another message in a few seconds…"
-              : "Send me a message to my email..."
+              : "Send me a message with your email address..."
           }
           className="
             flex-1 px-4 py-2
