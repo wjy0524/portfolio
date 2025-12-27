@@ -11,13 +11,13 @@ const SOCIALS = [
   },
   {
     label: "GitHub",
-    href: "https://github.com/jaeyeonwon",
+    href: "https://github.com/wjy0524",
     icon: <Github size={35} />,
     hover: "hover:text-black",
   },
   {
     label: "Instagram",
-    href: "https://instagram.com/jaeyeonwon",
+    href: "https://www.instagram.com/jae._.yeon_02/",
     icon: <Instagram size={35} />,
     hover: "hover:text-pink-500",
   },
