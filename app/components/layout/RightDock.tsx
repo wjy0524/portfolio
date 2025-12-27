@@ -15,13 +15,13 @@ export default function RightDock({
         fixed z-50 bg-white shadow-xl
         transition-transform duration-300 ease-out
 
-        /* ===== Mobile ===== */
+        /* ================= Mobile ================= */
         inset-0
-        translate-y-0
         ${isOpen ? "translate-y-0" : "translate-y-full"}
 
-        /* ===== Desktop ===== */
-        lg:top-0 lg:right-0 lg:inset-auto
+        /* ================= Desktop ================= */
+        lg:inset-auto
+        lg:top-0 lg:right-0
         lg:h-screen
         lg:w-[640px]
         lg:border-l
@@ -29,7 +29,7 @@ export default function RightDock({
         ${isOpen ? "lg:translate-x-0" : "lg:translate-x-full"}
       `}
     >
-      {/* Header */}
+      {/* ================= Header ================= */}
       <div className="h-14 px-4 flex items-center justify-between border-b">
         <button
           onClick={onClose}
@@ -39,8 +39,19 @@ export default function RightDock({
         </button>
       </div>
 
-      {/* Scrollable Content */}
-      <div className="h-[calc(100vh-56px)] overflow-y-auto p-6">
+      {/* ================= Scrollable Content ================= */}
+      <div
+        className="
+          h-[calc(100vh-56px)]
+          overflow-y-auto
+          p-6
+          pb-24
+          lg:pb-6
+        "
+        style={{
+          paddingBottom: "calc(6rem + env(safe-area-inset-bottom))",
+        }}
+      >
         {children}
       </div>
     </div>
