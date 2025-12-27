@@ -13,7 +13,6 @@ export async function POST(req: Request) {
     );
   }
 
-  // ✅ 여기서 초기화 (런타임)
   const resend = new Resend(apiKey);
 
   await resend.emails.send({

@@ -43,7 +43,7 @@ export default function Page() {
   const [inputDisabled, setInputDisabled] = useState(false);
 
   return (
-    <main className="relative min-h-screen bg-gray-50 overflow-x-hidden">
+    <main className="relative min-h-screen bg-gray-50 overflow-x-hidden pb-24">
       <Header />
 
       {/* ================= MAIN LAYOUT ================= */}
@@ -90,15 +90,14 @@ export default function Page() {
       <ChatInput
         disabled={inputDisabled}
         onSend={async (text) => {
-          const userId = Date.now();
-          const botId = userId + 1;
+          const baseId = Date.now();
 
-          // 1️⃣ User message
+          // 1️⃣ User + Sending bubble
           setMessages((prev) => [
             ...prev,
-            { id: userId, role: "user", content: text },
+            { id: baseId, role: "user", content: text },
             {
-              id: botId,
+              id: baseId + 1,
               role: "bot",
               content: "⏳ Sending your message…",
             },
@@ -116,10 +115,10 @@ export default function Page() {
               new Promise((r) => setTimeout(r, MIN_DELAY)),
             ]);
 
-            // 2️⃣ Bot success message
+            // 2️⃣ Success message
             setMessages((prev) =>
               prev.map((m) =>
-                m.id === botId
+                m.id === baseId + 1
                   ? {
                       ...m,
                       content:
@@ -129,13 +128,13 @@ export default function Page() {
               )
             );
 
-            // Disable input for 5 seconds to prevent spamming
+            // 3️⃣ Disable input temporarily
             setInputDisabled(true);
             setTimeout(() => setInputDisabled(false), 5000);
           } catch {
             setMessages((prev) =>
               prev.map((m) =>
-                m.id === botId
+                m.id === baseId + 1
                   ? {
                       ...m,
                       content:
@@ -144,6 +143,7 @@ export default function Page() {
                   : m
               )
             );
+            setInputDisabled(false);
           }
         }}
       />
