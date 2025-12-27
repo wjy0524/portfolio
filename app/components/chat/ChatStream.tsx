@@ -20,6 +20,7 @@ import SkillBar from "./SkillBar";
 import MemojiAvatar from "@/components/avatar/MemojiAvatar";
 
 
+
 /* ------------------------
    Types
 ------------------------- */
@@ -198,7 +199,6 @@ export default function ChatStream({ messages, setMessages }: Props) {
           );
         }
 
-
         return null;
       })}
 
@@ -209,7 +209,11 @@ export default function ChatStream({ messages, setMessages }: Props) {
       {!isTyping && (
         <ChatOptions onSelectSection={handleOptionClick} />
       )}
+
+      <section className="flex flex-col w-full max-w-5xl p-4 gap-6 pb-28"></section>
+
     </section>
+    
   );
 }
 
@@ -230,3 +234,5 @@ function getBotReply(section: Section): string {
       return "";
   }
 }
+
+
