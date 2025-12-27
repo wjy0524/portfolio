@@ -12,11 +12,21 @@ export default function RightDock({
   return (
     <div
       className={`
-        fixed top-0 right-0 z-50 h-screen
-        bg-white border-l shadow-xl
+        fixed z-50 bg-white shadow-xl
         transition-transform duration-300 ease-out
-        ${isOpen ? "translate-x-0" : "translate-x-full"}
-        w-[640px]   /* ✅ 여기서 폭 조절 */
+
+        /* ===== Mobile ===== */
+        inset-0
+        translate-y-0
+        ${isOpen ? "translate-y-0" : "translate-y-full"}
+
+        /* ===== Desktop ===== */
+        lg:top-0 lg:right-0 lg:inset-auto
+        lg:h-screen
+        lg:w-[640px]
+        lg:border-l
+        lg:translate-y-0
+        ${isOpen ? "lg:translate-x-0" : "lg:translate-x-full"}
       `}
     >
       {/* Header */}
@@ -29,7 +39,7 @@ export default function RightDock({
         </button>
       </div>
 
-      {/* ✅ Scrollable Content */}
+      {/* Scrollable Content */}
       <div className="h-[calc(100vh-56px)] overflow-y-auto p-6">
         {children}
       </div>
