@@ -17,6 +17,8 @@ import { SOCIALS } from "@/data/socials";
 import type { Message } from "@/types/chat";
 import { SKILLS } from "@/data/skills";
 import SkillBar from "./SkillBar";
+import MemojiAvatar from "@/components/avatar/MemojiAvatar";
+
 
 /* ------------------------
    Types
@@ -104,6 +106,11 @@ export default function ChatStream({ messages, setMessages }: Props) {
   ------------------------- */
   return (
     <section className="flex flex-col w-full max-w-5xl p-4 gap-6">
+      {messages.length === 1 && (
+        <div className="lg:hidden flex justify-center pt-4 pb-2">
+          <MemojiAvatar size={96} />
+        </div>
+      )}
       {messages.map((msg) => {
         // ---------------- Chat bubbles ----------------
         if (msg.role === "user" || msg.role === "bot") {
