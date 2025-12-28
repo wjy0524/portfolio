@@ -131,7 +131,7 @@ export const PROJECTS: Project[] = [
     techStack: ["C++", "OOP", "STL", "Data Structures"],
     previewImage: "/Rpg.png",
     detailMedia: [
-      { type: "video", src: "/game.mov" },
+      { type: "video", src: "/game.mp4" },
     ],
     links: [
       {
