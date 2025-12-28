@@ -52,6 +52,7 @@ app/
 ├── page.tsx           # Main page
 └── layout.tsx         # Root layout
 
+```
 
 First, run the development server:
 
