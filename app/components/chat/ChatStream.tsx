@@ -223,13 +223,13 @@ export default function ChatStream({ messages, setMessages }: Props) {
 function getBotReply(section: Section): string {
   switch (section) {
     case "experience":
-      return "Here’s a quick overview of my experience. Click a card to expand.";
+      return "Here’s my background and the roles I’ve taken on. Click a card to see what I worked on and the impact I made.";
     case "projects":
-      return "Here are some projects I’ve worked on. Click a card to see details.";
+      return "These are selected projects where I designed, built, and shipped real systems. Click a project to dive deeper.";
     case "skills":
-      return "My core skills include C/C++, TypeScript, React, Flutter, Firebase, and systems programming.";
+      return "My skill set spans systems programming, application development, and AI with a strong foundation in C/C++ and hands-on engineering.";
     case "socials":
-      return "You can find me on GitHub, LinkedIn, and Instagram.";
+      return "You can find my work and updates on GitHub, LinkedIn, and Instagram.";
     default:
       return "";
   }

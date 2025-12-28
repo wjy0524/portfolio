@@ -34,7 +34,7 @@ export default function Page() {
     {
       id: 1,
       role: "bot",
-      content: "Hi 👋 I’m Jaeyeon. What would you like to explore?",
+      content: "Hi 👋 I’m Jaeyeon, a software-focused ECE student who builds embedded systems, apps, and AI-powered tools. What would you like to explore?",
     },
   ]);
 
