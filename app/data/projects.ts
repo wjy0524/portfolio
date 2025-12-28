@@ -23,8 +23,11 @@ export type Project = {
   summary: string;
   highlights: string[];
   techStack: string[];
-  media?: ProjectMedia[];
+  previewImage?: string;     
+  detailMedia?: ProjectMedia[];
   links?: ProjectLink[];
+
+  
 };
 
 export const PROJECTS: Project[] = [
@@ -42,9 +45,11 @@ export const PROJECTS: Project[] = [
       "Focused on scalable architecture to support future multi-university expansion",
     ],
     techStack: ["Flutter", "Swift", "Firebase", "OpenAPI"],
-    media: [
+    previewImage: "/UniTime.png",
+    detailMedia: [
       { type: "image", src: "/UniTime.png" },
     ],
+    
     links: [
       {
         label: "GitHub",
@@ -65,7 +70,9 @@ export const PROJECTS: Project[] = [
       "Integrated eye-tracking, speech-to-text, and comprehension tests for multimodal data collection",
       "Applied Whisper ASR and Levenshtein similarity for reading accuracy evaluation",
       "Trained and evaluated ML models including Random Forest classifiers",
-      "Collected and processed data from 80+ participants",
+      "Collected and processed data from 80+ participants and achieved ~85% classification accuracy on 80+ participants",
+      "Reduced input latency by 40% using interrupt-driven design"
+
     ],
     techStack: [
       "Python",
@@ -75,8 +82,9 @@ export const PROJECTS: Project[] = [
       "Whisper",
       "NumPy",
     ],
-    media: [
-      { type: "image", src: "/Dystrace.png" },
+    previewImage: "/Dystrace.png",
+    detailMedia: [
+      { type: "video", src: "/dystrace.mp4" },
     ],
     links: [
       {
@@ -100,10 +108,12 @@ export const PROJECTS: Project[] = [
       "Combined C and ARM assembly for performance-critical components",
     ],
     techStack: ["C", "ARM Assembly", "Embedded Systems"],
-    media: [
+    previewImage: "/Debug.png",
+    detailMedia: [
       { type: "video", src: "/Debug Invader.mp4" }
     ],
   },
+
   {
     id: "dungeon-crawler",
     title: "Dungeon Crawler RPG",
@@ -119,7 +129,8 @@ export const PROJECTS: Project[] = [
       "Focused on memory safety and clean resource management using RAII concepts",
     ],
     techStack: ["C++", "OOP", "STL", "Data Structures"],
-    media: [
+    previewImage: "/Rpg.png",
+    detailMedia: [
       { type: "image", src: "/Dungeon.png" },
     ],
     links: [

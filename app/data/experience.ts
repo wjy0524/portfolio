@@ -45,28 +45,6 @@ export const EXPERIENCES: Experience[] = [
   },
 
   {
-    id: "rokmc",
-    role: "Communication / Signal Squad Leader & Interpreter (E-5)",
-    company: "Republic of Korea Marine Corps",
-    period: "Jun 2023 – Dec 2024",
-    logo: "/ROKMC.png",
-    preview:
-      "Led battalion-level signal operations and supported joint military exercises.",
-    inlineDetails: [
-      "Led signal squad operations at battalion level",
-      "Coordinated joint exercises with allied forces",
-      "Served as Korean–English military interpreter",
-    ],
-    fullDetails: [
-      "Led battalion-level communication and signal operations in high-pressure environments",
-      "Coordinated joint military exercises with allied forces including U.S. units",
-      "Acted as primary Korean–English interpreter for operational briefings",
-      "Managed secure communication protocols and field equipment",
-    ],
-    techStack: ["Leadership", "Communication Systems", "Interpretation"],
-  },
-
-  {
     id: "UTECE",
     role: "Faculty Recruitment Interviewer",
     company: "Univesity of Texas at Austin, ECE Department",
@@ -92,4 +70,27 @@ export const EXPERIENCES: Experience[] = [
     "Communication",
     "Student Advocacy",],
   },
+
+  {
+    id: "rokmc",
+    role: "Communication / Signal Squad Leader & Interpreter (E-5)",
+    company: "Republic of Korea Marine Corps",
+    period: "Jun 2023 – Dec 2024",
+    logo: "/ROKMC.png",
+    preview:
+      "Led battalion-level signal operations and supported joint military exercises.",
+    inlineDetails: [
+      "Led signal squad operations at battalion level",
+      "Coordinated joint exercises with allied forces",
+      "Served as Korean–English military interpreter",
+    ],
+    fullDetails: [
+      "Led battalion-level communication and signal operations in high-pressure environments",
+      "Coordinated joint military exercises with allied forces including U.S. units",
+      "Acted as primary Korean–English interpreter for operational briefings",
+      "Managed secure communication protocols and field equipment",
+    ],
+    techStack: ["Leadership", "Communication Systems", "Interpretation"],
+  },
+  
 ];
