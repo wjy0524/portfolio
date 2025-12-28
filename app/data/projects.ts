@@ -104,4 +104,29 @@ export const PROJECTS: Project[] = [
       { type: "video", src: "/Debug Invader.mp4" }
     ],
   },
+  {
+    id: "dungeon-crawler",
+    title: "Dungeon Crawler RPG",
+    subtitle: "Object-Oriented Console RPG Game",
+    period: "Aug 2025 – Dec 2025",
+    summary:
+      "A turn-based dungeon crawler RPG built with a strong focus on object-oriented design, extensibility, and game logic architecture.",
+    highlights: [
+      "Designed a full RPG system using OOP principles including inheritance, polymorphism, and encapsulation",
+      "Implemented Player, Monster, and Item class hierarchies with virtual functions and dynamic dispatch",
+      "Built turn-based combat logic with health, damage, and skill mechanics",
+      "Applied DFS-style dungeon traversal and state management",
+      "Focused on memory safety and clean resource management using RAII concepts",
+    ],
+    techStack: ["C++", "OOP", "STL", "Data Structures"],
+    media: [
+      { type: "image", src: "/Dungeon.png" },
+    ],
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/wjy0524/Dungeon_Crawler_RPG",
+      },
+    ],
+  },
 ];
