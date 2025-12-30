@@ -91,6 +91,11 @@ export const PROJECTS: Project[] = [
         label: "GitHub",
         url: "https://github.com/wjy0524/HackTX25-DYSCVER",
       },
+
+      {
+        label: "Website",
+        url: "https://dystrace-dyscvr-git-main-wjy0524s-projects.vercel.app/",
+      },
     ],
   },
 
