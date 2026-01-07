@@ -94,7 +94,7 @@ export const PROJECTS: Project[] = [
 
       {
         label: "Website",
-        url: "https://dystrace-dyscvr-git-main-wjy0524s-projects.vercel.app/",
+        url: "https://dystrace-dyscvr.vercel.app/",
       },
     ],
   },
