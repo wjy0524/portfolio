@@ -44,7 +44,7 @@ export const PROJECTS: Project[] = [
       "Designed UT-specific UX flows for course scheduling and academic planning",
       "Focused on scalable architecture to support future multi-university expansion",
     ],
-    techStack: ["Flutter", "Swift", "Firebase", "OpenAPI"],
+    techStack: ["RAG", "Swift", "Firebase", "OpenAPI"],
     previewImage: "/UniTime.png",
     detailMedia: [
       { type: "image", src: "/UniTime.png" },
