@@ -22,6 +22,30 @@ export type Experience = {
 };
 
 export const EXPERIENCES: Experience[] = [
+
+  {
+    id: "texas-luminescence",
+    role: "Machine Learning Engineer",
+    company: "Texas Luminescence",
+    period: "Jan 2026 – Present",
+    logo: "TexasLuminescence.png", 
+    preview:
+      "Building ML models for ALLOCARE, a FinTech app using regression models and user data to help users budget and manage finances.",
+    inlineDetails: [
+      "Developing regression models to predict and manage user spending patterns",
+      "Building ML pipelines for the ALLOCARE FinTech platform",
+      "Processing and analyzing user financial input data for budget recommendations",
+    ],
+    fullDetails: [
+      "Designing and training regression models to forecast spending behavior and assist users in budget planning",
+      "Building end-to-end ML pipelines for ALLOCARE, a FinTech application focused on personal finance management",
+      "Processing and normalizing user financial input data for model training and inference",
+      "Collaborating on feature engineering from transaction history and user-defined financial goals",
+      "Contributing to a product that helps users create budgets, track spending, and manage finances through data-driven insights",
+    ],
+    techStack: ["Python", "Scikit-learn", "Regression Models", "Pandas", "NumPy", "FinTech", "Data Pipelines"],
+  },
+
   {
     id: "kookmin-ai",
     role: "Undergraduate Research Assistant",
