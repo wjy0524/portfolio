@@ -25,7 +25,7 @@ export const EXPERIENCES: Experience[] = [
 
   {
     id: "texas-luminescence",
-    role: "Machine Learning Engineer",
+    role: "Machine Learning / Backend Engineer",
     company: "Texas Luminescence",
     period: "Jan 2026 – Present",
     logo: "TexasLuminescence.png", 
