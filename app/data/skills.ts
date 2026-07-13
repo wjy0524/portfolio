@@ -52,6 +52,9 @@ export const SKILLS: SkillSection[] = [
       { name: "Embedded Systems", level: 85 },
       { name: "ARM Assembly", level: 70 },
       { name: "UART / ADC / Timers", level: 75 },
+      { name: "Battery Management Systems (BMS)", level: 70 },
+      { name: "Impedance Spectroscopy (EIS)", level: 65 },
+      { name: "Signal Processing", level: 75 },
     ],
   },
 

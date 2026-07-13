@@ -24,6 +24,36 @@ export type Experience = {
 export const EXPERIENCES: Experience[] = [
 
   {
+    id: "samsung-sdi",
+    role: "BMS Algorithm Engineer Intern",
+    company: "Samsung SDI",
+    period: "Jun 2026 – Present",
+    logo: "SamsungSDI.png",
+    preview:
+      "Developing abnormal cell diagnosis algorithms for Battery Management Systems (BMS), analyzing impedance and thermal characteristics to catch early-stage cell anomalies.",
+    inlineDetails: [
+      "Developing diagnostic algorithms to detect abnormal battery cells within the BMS development team",
+      "Analyzing impedance (EIS-based) and thermal signal characteristics to identify early signs of cell degradation",
+      "Building signal processing and feature extraction pipelines for battery cell health diagnostics",
+    ],
+    fullDetails: [
+      "Joined Samsung SDI's BMS (Battery Management System) development team to design abnormal cell diagnosis algorithms",
+      "Analyzed impedance (EIS-based) and thermal signal characteristics to detect early-stage cell anomalies and degradation patterns",
+      "Built signal processing and feature extraction pipelines for battery cell health diagnostics",
+      "Collaborated with the BMS team on algorithm validation and integration into the diagnostic pipeline",
+      "Contributed to improving the safety and reliability of battery systems through proactive anomaly detection",
+    ],
+    techStack: [
+      "Python",
+      "Signal Processing",
+      "Impedance Spectroscopy (EIS)",
+      "Thermal Analysis",
+      "Battery Management Systems (BMS)",
+      "Anomaly Detection",
+    ],
+  },
+
+  {
     id: "texas-luminescence",
     role: "Machine Learning / Backend Engineer",
     company: "Texas Luminescence",

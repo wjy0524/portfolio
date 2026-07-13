@@ -22,7 +22,7 @@ export default function Header() {
             <div className="text-left">
               <div className="text-lg font-semibold">Jaeyeon Won</div>
               <div className="text-sm text-gray-500">
-                ECE @ UT Austin · Software · Junior · GPA: 4.00/4.00
+                ECE @ UT Austin · Software · Senior · GPA: 3.99/4.00
               </div>
             </div>
           </button>
