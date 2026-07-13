@@ -25,9 +25,9 @@ export const EXPERIENCES: Experience[] = [
 
   {
     id: "samsung-sdi",
-    role: "BMS Algorithm Engineer Intern",
+    role: "Software Engineer Intern — BMS Algorithms",
     company: "Samsung SDI",
-    period: "Jun 2026 – Present",
+    period: "May 2026 – Present",
     logo: "SamsungSDI.png",
     preview:
       "Developing abnormal cell diagnosis algorithms for Battery Management Systems (BMS), analyzing impedance and thermal characteristics to catch early-stage cell anomalies.",
