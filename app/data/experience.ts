@@ -27,14 +27,14 @@ export const EXPERIENCES: Experience[] = [
     id: "samsung-sdi",
     role: "Software Engineer Intern — BMS Algorithms",
     company: "Samsung SDI",
-    period: "May 2026 – Present",
+    period: "May 2026 – Aug 2026",
     logo: "SamsungSDI.png",
     preview:
-      "Developing abnormal cell diagnosis algorithms for Battery Management Systems (BMS), analyzing impedance and thermal characteristics to catch early-stage cell anomalies.",
+      "Developed abnormal cell diagnosis algorithms for Battery Management Systems (BMS), analyzing impedance and thermal characteristics to catch early-stage cell anomalies.",
     inlineDetails: [
-      "Developing diagnostic algorithms to detect abnormal battery cells within the BMS development team",
-      "Analyzing impedance (EIS-based) and thermal signal characteristics to identify early signs of cell degradation",
-      "Building signal processing and feature extraction pipelines for battery cell health diagnostics",
+      "Developed diagnostic algorithms to detect abnormal battery cells within the BMS development team",
+      "Analyzed impedance (EIS-based) and thermal signal characteristics to identify early signs of cell degradation",
+      "Built signal processing and feature extraction pipelines for battery cell health diagnostics",
     ],
     fullDetails: [
       "Joined Samsung SDI's BMS (Battery Management System) development team to design abnormal cell diagnosis algorithms",
