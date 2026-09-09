@@ -34,22 +34,23 @@ export const PROJECTS: Project[] = [
   {
     id: "unitime",
     title: "UniTime",
-    subtitle: "UT Austin Student Planner App",
+    subtitle: "AI-Powered Student Platform for UT Austin",
     period: "Aug 2025 – Present",
     summary:
-      "A student-focused planner that integrates schedule management, GPA tracking, and social features into a single UT Austin–specific platform.",
+      "A native iOS platform for UT Austin students combining schedule management, GPA tracking, and campus social features, with an AI advisor grounded in retrieved UT course and event data.",
     highlights: [
-      "Built a cross-platform mobile application using Flutter",
-      "Implemented authentication and real-time data sync using Firebase Auth and Firestore",
-      "Designed UT-specific UX flows for course scheduling and academic planning",
-      "Focused on scalable architecture to support future multi-university expansion",
+      "Built a native iOS app in SwiftUI (~25,000 lines) on Firebase Auth, Firestore, and Cloud Functions",
+      "Designed a confidence-gated RAG pipeline where OpenAI embeddings retrieve UT course and event data from a Qdrant vector database, using campus context only when at least two results clear a 0.75 similarity threshold",
+      "Built a four-mode reasoning router (personal / campus / web / general) with a SerpAPI fallback, so the assistant reports that it lacks reliable information instead of hallucinating an answer",
+      "Added a rule-based intent classifier that injects only the profile fields relevant to each question, reducing prompt size and unnecessary exposure of student data",
+      "Automated a daily scheduled Cloud Function that scrapes campus events and refreshes the vector index",
+      "Built a reusable SwiftUI component library plus social features including friends, profiles, and post sharing",
     ],
-    techStack: ["RAG", "Swift", "Firebase", "OpenAPI"],
+    techStack: ["SwiftUI", "Firebase", "Cloud Functions", "TypeScript", "Qdrant", "OpenAI", "RAG"],
     previewImage: "/UniTime.png",
     detailMedia: [
       { type: "image", src: "/UniTime.png" },
     ],
-    
     links: [
       {
         label: "GitHub",
