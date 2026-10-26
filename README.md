@@ -74,7 +74,7 @@ To enable the contact form email feature, create a `.env.local` file in the proj
 RESEND_API_KEY=your_resend_api_key_here
 ```
 ## 🌍 Live Demo
-https://portfolio-d2nq652k0-wjy0524s-projects.vercel.app/
+https://jaeyeonwon.vercel.app/
 
 ## 🎯 Why This Portfolio?
 
