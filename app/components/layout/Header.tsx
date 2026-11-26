@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Phone } from "lucide-react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -30,19 +29,10 @@ export default function Header() {
           {/* 🔥 프로필 카드 */}
           {open && (
             <div className="absolute mt-4 w-80 bg-white rounded-xl shadow-xl p-5">
-              <div className="text-xl font-semibold mb-2">
+              <div className="text-xl font-semibold mb-4">
                 Jaeyeon Won
               </div>
 
-              <div className="flex items-center gap-3 text-gray-700 mb-2">
-                <Mail size={16} />
-                wonjaeyeon0524@gmail.com
-              </div>
-
-              <div className="flex items-center gap-3 text-gray-700 mb-4">
-                <Phone size={16} />
-                737-267-6401
-              </div>
 
               <a
                 href="/resume.pdf"
