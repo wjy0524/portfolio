@@ -101,6 +101,54 @@ export const PROJECTS: Project[] = [
   },
 
   {
+    id: "pitcrew",
+    title: "PitCrew",
+    subtitle: "Agentic Predictive Maintenance · Austin Agentic AI Hackathon",
+    period: "Oct 2026",
+    summary:
+      "A multi-agent crew that watches shop-floor machines, flags failure risk, recommends actions, and orders parts only after a human operator approves.",
+    highlights: [
+      "Built the operator console in Python Shiny for a multi-agent crew running on Strands Agents and Amazon Bedrock AgentCore",
+      "Redesigned the console around a priority queue so operators see the most urgent machines first",
+      "Added a Comms agent that turns the monitoring agent's readings into alerts for floor operators",
+      "Kept a human-approval step before any part order or technician booking",
+    ],
+    techStack: ["Python", "Shiny", "Strands Agents", "Amazon Bedrock", "Multi-Agent"],
+    previewImage: "/PitCrew.svg",
+    detailMedia: [{ type: "video", src: "/pitcrew.mp4" }],
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/MuditUpadhyay04/AI-Agentic-Hack",
+      },
+    ],
+  },
+
+  {
+    id: "virtual-stylist",
+    title: "Virtual Stylist",
+    subtitle: "Digital Closet & Outfit Recommendation App (ECE 364D)",
+    period: "Oct 2026 – Present",
+    summary:
+      "A mobile app that builds a digital closet from the clothes you own, records how they fit, suggests outfits, and recommends a size from a shopping link.",
+    highlights: [
+      "Owned the backend in a 4-person team: FastAPI service with wardrobe, profile, and product APIs",
+      "Designed the Supabase Postgres schema (profiles, style preferences, clothing items, fit feedback, linked products) with Row Level Security so users only reach their own rows",
+      "Verified Supabase JWTs on every request (HS256 secret or JWKS) and stored closet photos in a private, per-user storage bucket",
+      "Wrote API tests with pytest and documented the API contract for the frontend and AI teammates",
+    ],
+    techStack: ["Python", "FastAPI", "Supabase", "PostgreSQL", "JWT", "pytest"],
+    previewImage: "/VirtualStylist.png",
+    detailMedia: [{ type: "video", src: "/virtual-stylist.mp4" }],
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/wjy0524/ece364d-virtual-stylist",
+      },
+    ],
+  },
+
+  {
     id: "debug-invader",
     title: "Debug Invader",
     subtitle: "Embedded Systems Arcade Game",

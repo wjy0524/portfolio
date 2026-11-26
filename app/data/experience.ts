@@ -27,7 +27,7 @@ export const EXPERIENCES: Experience[] = [
     id: "samsung-sdi",
     role: "Software Engineer Intern — BMS Algorithms",
     company: "Samsung SDI",
-    period: "May 2026 – Aug 2026",
+    period: "Jun 2026 – Jul 2026",
     logo: "SamsungSDI.png",
     preview:
       "Developed abnormal cell diagnosis algorithms for Battery Management Systems (BMS), analyzing impedance and thermal characteristics to catch early-stage cell anomalies.",
@@ -101,7 +101,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "UTECE",
     role: "Faculty Recruitment Interviewer",
-    company: "Univesity of Texas at Austin, ECE Department",
+    company: "University of Texas at Austin, ECE Department",
     period: "Dec 2025 – Present",
     logo: "ECE.png",
     preview:
